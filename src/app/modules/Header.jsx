@@ -14,7 +14,7 @@ export default ({ onJoin }) => {
                     <p className="font-pixel text-3xl">Online</p>
                 </div>
             </div>
-            <StandButton onClick={onJoin} label={'Me apunto!'} />
+            <StandButton onClick={onJoin} enabled={true} label={'Me apunto!'} />
         </div>
     </>
 }

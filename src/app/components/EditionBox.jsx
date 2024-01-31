@@ -16,7 +16,7 @@ export default ({ onJoin, enabled, edition, dates: { days, month }, hours: { hou
 
             <div className="flex flex-col gap-2 ">
                 <p className={`text-4xl font-bold mb-2`}>{`${price}€`}</p>
-                <StandButton onClick={onJoin} className={!enabled && 'opacity-40'} label={enabled ? 'Me apunto! 🥳' : 'Soon'} />
+                <StandButton onClick={onJoin} enabled={enabled} className={!enabled && 'opacity-40'} label={enabled ? 'Me apunto! 🥳' : 'Soon'} />
             </div>
 
         </div>

@@ -35,7 +35,7 @@ export default ({ onJoin }) => {
 
                             <div className="flex flex-col gap-2 pt-4">
                                 <p className={`text-4xl font-bold mb-2`}>{`${ed.price}€`}</p>
-                                <StandButton onClick={onJoin} className={!ed.enabled && 'opacity-40'} label={ed.enabled ? 'Me apunto! 🥳' : 'Soon'} />
+                                <StandButton onClick={onJoin} enabled={ed.enabled} className={!ed.enabled && 'opacity-40'} label={ed.enabled ? 'Me apunto! 🥳' : 'Soon'} />
                             </div>
                         </AccordionBody>
                     </Accordion>
